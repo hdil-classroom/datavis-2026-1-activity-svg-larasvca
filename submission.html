@@ -12,23 +12,113 @@
 		}
 
 		#visualization-activity {
-			width: 600px;
+			width: 900px;
 			height: 500px;
 		}
 
 		/* YOUR CSS CODE WILL GO HERE */
-
+		.axis-label {
+  			font-family: sans-serif;
+			font-size: 13px;
+  			fill: #444;
+		}
+		.axis-title {
+  			font-family: sans-serif;
+  			font-size: 13px;
+  			fill: #222;
+		}
+		.tick-line {
+  			stroke: #ccc;
+  			stroke-width: 1;
+		}
+		.legend-text {
+  			font-family: sans-serif;
+  			font-size: 12px;
+  			fill: #333;
+		}
 
 	</style>
 </head>
 
 <body>
 	<h1 id="header-title">
-		In-Class Acitivity by REPLACE_WITH_YOUR_NAME
+		In-Class Acitivity by Lara Svensson Calzada
 	</h1>
 
 	<svg id="visualization-activity">
 		<!-- YOUR SVG CODE WILL GO HERE -->
+
+  		<!-- Y-axis gridlines and tick labels -->
+  		<line x1="75" y1="390" x2="80" y2="390" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="393" text-anchor="end" class="axis-label">0</text>
+
+  		<line x1="75" y1="345" x2="80" y2="345" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="348" text-anchor="end" class="axis-label">10,000</text>
+
+  		<line x1="75" y1="300" x2="80" y2="300" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="303" text-anchor="end" class="axis-label">20,000</text>
+
+  		<line x1="75" y1="255" x2="80" y2="255" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="258" text-anchor="end" class="axis-label">30,000</text>
+
+  		<line x1="75" y1="210" x2="80" y2="210" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="213" text-anchor="end" class="axis-label">40,000</text>
+
+  		<line x1="75" y1="165" x2="80" y2="165" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="168" text-anchor="end" class="axis-label">50,000</text>
+
+  		<line x1="75" y1="120" x2="80" y2="120" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="123" text-anchor="end" class="axis-label">60,000</text>
+
+  		<line x1="75" y1="75" x2="80" y2="75" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="78" text-anchor="end" class="axis-label">70,000</text>
+
+  		<line x1="75" y1="30" x2="80" y2="30" stroke="#ccc" stroke-width="1"/>
+  		<text x="72" y="33" text-anchor="end" class="axis-label">80,000</text>
+
+  		<!-- Axis Lines -->
+  		<line x1="80" y1="30" x2="80" y2="390" stroke="#999" stroke-width="1"/>
+  		<line x1="80" y1="390" x2="660" y2="390" stroke="#999" stroke-width="1"/>
+
+  		<!-- 홍대입구 -->
+  		<rect x="90" y="62" width="40" height="329" fill="#4caf50"/>
+  		<text x="110" y="405" text-anchor="middle" class="axis-label">홍대입구</text>
+
+  		<!-- 잠실(송파구청) -->
+  		<rect x="190" y="106" width="40" height="284" fill="#4caf50"/>
+  		<text x="210" y="405" text-anchor="middle" class="axis-label">잠실(송파구청)</text>
+
+  		<!-- 고속터미널 -->
+  		<rect x="290" y="149" width="40" height="239" fill="#ff9800"/>
+  		<text x="310" y="405" text-anchor="middle" class="axis-label">고속터미널</text>
+
+  		<!-- 서울역 -->
+  		<rect x="390" y="207" width="40" height="180" fill="#1976d2"/>
+  		<text x="410" y="405" text-anchor="middle" class="axis-label">서울역</text>
+
+  		<!-- 신림 -->
+  		<rect x="490" y="218" width="40" height="171" fill="#4caf50"/>
+  		<text x="510" y="405" text-anchor="middle" class="axis-label">신림</text>
+
+  		<!-- 신도림 -->
+  		<rect x="590" y="221" width="40" height="169" fill="#4caf50"/>
+  		<text x="610" y="405" text-anchor="middle" class="axis-label">신도림</text>
+
+  		<!-- Y-axis title -->
+  		<text x="-240" y="18" transform="rotate(-90)" text-anchor="middle" class="axis-title">Entry Count</text>
+
+  		<!-- X-axis title -->
+  		<text x="360" y="425" text-anchor="middle" class="axis-title">Station Name</text>
+
+  		<!-- Legend -->
+  		<rect x="660" y="40" width="14" height="14" fill="#1976d2"/>
+  		<text x="680" y="52" class="legend-text">Line 1</text>
+
+  		<rect x="660" y="62" width="14" height="14" fill="#4caf50"/>
+  		<text x="680" y="74" class="legend-text">Line 2</text>
+
+  		<rect x="660" y="84" width="14" height="14" fill="#ff9800"/>
+  		<text x="680" y="96" class="legend-text">Line 3</text>
 
 
 	</svg>
